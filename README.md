@@ -1,2 +1,126 @@
 # Analog-Metal-Detector
-todo
+
+A fully analog metal detector designed and built using multistage MOSFET amplifier circuits. This project explores the practical application of analog circuit design principles, including LC oscillators, frequency mixing, filtering, amplification, and PCB implementation.
+
+The goal of the project was to create a metal detector where the output frequency changes based on the distance to a metal object. The final design successfully detected various metal objects, including small objects such as bolts.
+
+---
+
+## Project Overview
+
+The metal detector operates by comparing the frequency difference between two LC oscillators:
+
+- A **static oscillator** using a shielded inductor that remains unaffected by nearby objects
+- A **variable oscillator** using a custom-wound exposed inductor that changes frequency when near metal
+
+When metal approaches the variable inductor, eddy currents affect the inductance, shifting the oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal.
+
+---
+
+## System Architecture
+
+The circuit consists of several analog processing stages:
+
+### 1. LC Oscillators
+
+Two LC oscillators generate signals near 50 kHz.
+
+- Static oscillator: approximately 50 kHz
+- Variable oscillator: approximately 50.1 kHz at idle
+
+The frequency difference produces a low-frequency beat signal that changes when metal is detected.
+
+---
+
+### 2. Frequency Mixer
+
+The oscillator outputs are combined through a nonlinear MOSFET mixer stage.
+
+The mixer generates multiple frequency components, with the difference frequency: f_difference = |f_static - f_variable|
+being the signal used for detection.
+
+---
+
+### 3. Low-Pass Filter
+
+A passive RC low-pass filter removes unwanted high-frequency mixer products while preserving the detection signal.
+
+Designed cutoff frequency:
+
+- ~15 kHz
+
+---
+
+### 4. MOSFET Amplifier Stages
+
+The filtered signal is amplified through:
+
+- Common-source (CS) amplifier
+  - Provides voltage gain
+
+- Common-drain (CD) amplifier
+  - Acts as an output buffer
+  - Drives the speaker load
+
+---
+
+## Design Process
+
+The project involved the complete hardware development cycle:
+
+- Hand calculations
+- LTspice simulation
+- PCB schematic design
+- PCB layout
+- Hardware assembly
+- Oscilloscope measurements
+- Manual tuning and optimization
+
+Because practical circuit behavior differs from ideal calculations, final performance required tuning component values and MOSFET bias points based on measured waveforms.
+
+---
+
+## Hardware Highlights
+
+### Key Components
+
+- MOSFET amplifier stages
+- Custom wound detection inductor
+- LC oscillator circuits
+- RC filtering network
+- Speaker output stage
+- Custom PCB
+
+### Tools Used
+
+- LTspice
+- PCB design software
+- Oscilloscope
+- Soldering and hardware debugging tools
+
+---
+
+## Results
+
+The completed metal detector achieved:
+
+- Stable oscillator operation near 50 kHz
+- Audible frequency variation when approaching metal
+- Successful detection of multiple objects
+- Detection of small metallic objects such as bolts
+
+The final design prioritized practical detection performance through hardware tuning rather than purely theoretical optimization.
+
+---
+
+## Lessons Learned
+
+This project demonstrated the challenges of transitioning from circuit theory to real hardware.
+
+Key takeaways:
+
+- Simulation results do not always perfectly predict physical behavior
+- Component tolerances and parasitics significantly affect analog circuits
+- Bias point tuning is critical for MOSFET amplifier performance
+- Hardware debugging and measurement are essential parts of engineering design
+
