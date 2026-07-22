@@ -8,7 +8,7 @@ The goal of the project was to create a metal detector where the output frequenc
 
 ## Demo
 
-Final metal detector in action:
+Final metal detector in action (click to play):
 
 <p align="center">
   <a href="https://youtu.be/45hZLWoJUJI">
