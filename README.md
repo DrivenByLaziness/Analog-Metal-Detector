@@ -26,7 +26,7 @@ Detailed PCB schematic and layout included in the [`PCB Files`](PCB%20Files/) fo
 The metal detector operates by comparing the frequency difference between two LC oscillators:
 
 - A **static oscillator** using a shielded inductor that remains unaffected by nearby objects
-- A **variable oscillator** using a custom-wound exposed "inductor" that changes frequency when near metal
+- A **variable oscillator** using a [custom-wound exposed "inductor"](Images/Detecting_Coil.JPG) that changes frequency when near metal
 
 When metal approaches the variable inductor, eddy currents affect the inductance, shifting the LC oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal using a mixer and amplifier stages.
 
