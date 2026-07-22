@@ -3,6 +3,7 @@
 A fully analog metal detector using oscillators and multistage MOSFET amplifier circuits. This project explores the practical application of analog circuit design principles, including LC oscillators, frequency mixing, filtering, amplification, and PCB implementation.
 
 The goal of the project was to create a metal detector where the output frequency changes based on proximity to metal. The final design successfully detected various metal objects, including small objects such as bolts.
+
 ---
 
 ## Demo
