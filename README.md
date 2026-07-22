@@ -12,7 +12,7 @@ Final metal detector in action:
 
 <p align="center">
   <a href="https://youtu.be/45hZLWoJUJI">
-    <img src="https://youtube.com" alt="Watch the Demo Video" width="600" />
+    <img src="https://img.youtube.com/vi/45hZLWoJUJI/0.jpg" alt="Watch the Demo Video" width="600" />
   </a>
 </p>
 
