@@ -16,6 +16,9 @@ Manufactured PCB with all components soldered:
 
 <p align="center"><img src="Images/Assembled_PCB.jpg" alt="Manufactured PCB with all components soldered" width="60%"></p>
 
+
+Detailed PCB schematic and layout included in the `PCB Files` folder.
+
 ---
 
 ## Project Overview
