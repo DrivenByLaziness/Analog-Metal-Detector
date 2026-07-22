@@ -14,7 +14,7 @@ Final metal detector in action:
 
 Manufactured PCB with all components soldered:
 
-![Manufactured PCB with all components soldered](Images/Assembled_PCB.jpg)
+![Manufactured PCB with all components soldered](Images/Assembled_PCB.PNG)
 
 
 ---
