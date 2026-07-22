@@ -28,7 +28,9 @@ The metal detector operates by comparing the frequency difference between two LC
 - A **static oscillator** using a shielded inductor that remains unaffected by nearby objects
 - A **variable oscillator** using a custom-wound exposed "inductor" that changes frequency when near metal
 
-When metal approaches the variable inductor, eddy currents affect the inductance, shifting the LC oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal.
+When metal approaches the variable inductor, eddy currents affect the inductance, shifting the LC oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal using a mixer and amplifier stages.
+
+[Schematic](PCB%20Files/Schematic_PDF.pdf)
 
 ---
 
