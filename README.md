@@ -10,7 +10,11 @@ The goal of the project was to create a metal detector where the output frequenc
 
 Final metal detector in action:
 
-<p align="center"><video src="Images/demo.mp4" width="80%" controls></video></p>
+<p align="center">
+  <a href="https://youtu.be/45hZLWoJUJI">
+    <img src="https://youtube.com" alt="Watch the Demo Video" width="600" />
+  </a>
+</p>
 
 
 Manufactured PCB with all components soldered:
