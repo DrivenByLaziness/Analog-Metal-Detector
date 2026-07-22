@@ -1,8 +1,8 @@
 # Analog-Metal-Detector
 
-A fully analog metal detector designed and built using multistage MOSFET amplifier circuits. This project explores the practical application of analog circuit design principles, including LC oscillators, frequency mixing, filtering, amplification, and PCB implementation.
+A fully analog metal detector using oscillators and multistage MOSFET amplifier circuits. This project explores the practical application of analog circuit design principles, including LC oscillators, frequency mixing, filtering, amplification, and PCB implementation.
 
-The goal of the project was to create a metal detector where the output frequency changes based on the distance to a metal object. The final design successfully detected various metal objects, including small objects such as bolts.
+The goal of the project was to create a metal detector where the output frequency changes based on proximity to metal. The final design successfully detected various metal objects, including small objects such as bolts.
 
 ---
 
@@ -11,9 +11,9 @@ The goal of the project was to create a metal detector where the output frequenc
 The metal detector operates by comparing the frequency difference between two LC oscillators:
 
 - A **static oscillator** using a shielded inductor that remains unaffected by nearby objects
-- A **variable oscillator** using a custom-wound exposed inductor that changes frequency when near metal
+- A **variable oscillator** using a custom-wound exposed "inductor" that changes frequency when near metal
 
-When metal approaches the variable inductor, eddy currents affect the inductance, shifting the oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal.
+When metal approaches the variable inductor, eddy currents affect the inductance, shifting the LC oscillator frequency. The difference between the two oscillator frequencies is extracted and converted into an audible signal.
 
 ---
 
@@ -26,9 +26,9 @@ The circuit consists of several analog processing stages:
 Two LC oscillators generate signals near 50 kHz.
 
 - Static oscillator: approximately 50 kHz
-- Variable oscillator: approximately 50.1 kHz at idle
+- Variable oscillator: approximately 50.1 kHz at idle (100 Hz idle buzz tone)
 
-The frequency difference produces a low-frequency beat signal that changes when metal is detected.
+The frequency difference increases when metal is near, producing a higher pitch beat signal.
 
 ---
 
@@ -43,11 +43,11 @@ being the signal used for detection.
 
 ### 3. Low-Pass Filter
 
-A passive RC low-pass filter removes unwanted high-frequency mixer products while preserving the detection signal.
+A low-pass filter removes unwanted high-frequency mixer products, effectively outputting only the difference frequency.
 
 Designed cutoff frequency:
 
-- ~15 kHz
+- ~15 kHz (humans cant hear over 20kHz anyways)
 
 ---
 
@@ -68,35 +68,13 @@ The filtered signal is amplified through:
 
 The project involved the complete hardware development cycle:
 
-- Hand calculations
+- Hand calculations (LC frequencies, gains, filter cutoff...)
 - LTspice simulation
-- PCB schematic design
-- PCB layout
-- Hardware assembly
+- PCB schematic design + layout + assembly 
 - Oscilloscope measurements
 - Manual tuning and optimization
 
-Because practical circuit behavior differs from ideal calculations, final performance required tuning component values and MOSFET bias points based on measured waveforms.
-
----
-
-## Hardware Highlights
-
-### Key Components
-
-- MOSFET amplifier stages
-- Custom wound detection inductor
-- LC oscillator circuits
-- RC filtering network
-- Speaker output stage
-- Custom PCB
-
-### Tools Used
-
-- LTspice
-- PCB design software
-- Oscilloscope
-- Soldering and hardware debugging tools
+Because practical circuit behavior differs from ideal calculations, final performance required tuning component values and MOSFET bias points based on measured waveforms to achieve the loudest signal (highest gain).
 
 ---
 
@@ -106,8 +84,7 @@ The completed metal detector achieved:
 
 - Stable oscillator operation near 50 kHz
 - Audible frequency variation when approaching metal
-- Successful detection of multiple objects
-- Detection of small metallic objects such as bolts
+- Successful detection of over 90% of objects (20/22) including small metallic objects such as bolts under a tarp
 
 The final design prioritized practical detection performance through hardware tuning rather than purely theoretical optimization.
 
