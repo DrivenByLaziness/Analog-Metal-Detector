@@ -10,7 +10,9 @@ The goal of the project was to create a metal detector where the output frequenc
 
 Final metal detector in action (turn up volume):
 
-https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
+
+https://github.com/user-attachments/assets/48171eca-213f-4c02-9926-b1ab0958c866
+
 
 Manufactured PCB with all components soldered:
 
