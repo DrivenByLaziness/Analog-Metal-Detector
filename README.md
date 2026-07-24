@@ -12,14 +12,6 @@ Final metal detector in action (Turn up volume):
 
 https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
 
-
-
-| Final metal detector in action: |
-| :---: |
-| <br> https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2 <br><br> |
-
-
-
 Manufactured PCB with all components soldered:
 
 <p align="center"><img src="Images/Assembled_PCB.jpg" alt="Manufactured PCB with all components soldered" width="60%"></p>
