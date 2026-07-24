@@ -17,7 +17,7 @@ Final metal detector in action:
 <div style="display: flex; justify-content: center; width: 100%;">
   <div style="width: 100%; max-width: 800px;">
 
-https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
+    https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
 
   </div>
 </div>
