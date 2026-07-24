@@ -8,13 +8,11 @@ The goal of the project was to create a metal detector where the output frequenc
 
 ## Demo
 
-Final metal detector in action (click to play):
+Final metal detector in action:
 
-<p align="center">
-  <a href="https://youtu.be/45hZLWoJUJI">
-    <img src="https://img.youtube.com/vi/45hZLWoJUJI/0.jpg" alt="Watch the Demo Video" width="600" />
-  </a>
-</p>
+
+https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
+
 
 
 Manufactured PCB with all components soldered:
