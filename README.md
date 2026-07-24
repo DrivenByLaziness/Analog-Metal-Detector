@@ -11,7 +11,9 @@ The goal of the project was to create a metal detector where the output frequenc
 Final metal detector in action:
 
 
-<p align="center">https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2</p>
+<p align="center">
+  https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
+</p>
 
 
 
