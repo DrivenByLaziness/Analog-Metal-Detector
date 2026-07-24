@@ -8,9 +8,15 @@ The goal of the project was to create a metal detector where the output frequenc
 
 ## Demo
 
-Final metal detector in action:
+Final metal detector in action (Turn up volume):
 
 https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2
+
+
+
+| Final metal detector in action: |
+| :---: |
+| <br> https://github.com/user-attachments/assets/338a3687-1653-4ab7-a3a3-5c8e10d46fd2 <br><br> |
 
 
 
